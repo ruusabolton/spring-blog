@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 
 
-public class MatchController {
+public class MathController {
 
     @RequestMapping(path = "/add/{number1}/and/{number2}", method = RequestMethod.GET)
     @ResponseBody

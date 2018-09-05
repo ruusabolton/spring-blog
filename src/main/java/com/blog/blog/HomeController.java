@@ -13,12 +13,6 @@ import org.springframework.web.bind.annotation.*;
         }
 
 
-        @GetMapping("/hello/{name}")
-        @ResponseBody
-        public String sayHello(@PathVariable String name) {
-            return "Hello " + name + "!";
-        }
-
 
 
 }
