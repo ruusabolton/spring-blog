@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 public class MathController {
 
-    @RequestMapping(path = "/add/{number1}/and/{number2}", method = RequestMethod.GET)
+    @RequestMapping("/add/{number1}/and/{number2}")
+//  A diff approach (path="") is important if it is a POST-method!! GET is the default.
+//    @RequestMapping(path = "/add/{number1}/and/{number2}", method = RequestMethod.GET)
     @ResponseBody
     public String add(@PathVariable int number1, @PathVariable int number2) {
 
